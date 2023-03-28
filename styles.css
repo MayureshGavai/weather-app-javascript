@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    background-color: #222
+}
+
+
+.card{
+    width: 90%;
+    max-width: 400px;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    margin: 30px auto;
+    padding: 40px 35px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+
+.search{
+    margin-top: 30px;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+
+.search input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.search button{
+    height: 40px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.search button i{
+    font-size: 16px;
+    color: blueviolet;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.content{
+    /* margin-top:10px; */
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+    padding: 0 100px;
+    text-align: center;
+}
+
+.content img{
+    height: 150px;
+}
+
+.content div h1{
+    font-size: 32px;
+}
+
+.content div p{
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
