@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/clear-day.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Weather App</title>
 </head>
+
 <body>
-    
+
     <div class="card">
         <h1>Weather App</h1>
-        
+
         <!-- ------search field------ -->
         <div class="search">
-            <input type="text" placeholder="Enter City Name">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
-        <h2>City</h2>
+        <div class="error">
+            <h2>Invalid City Name</h2>
+        </div>
+
+        <div class="info">
+            <!-- ------City Name------ -->
+        <h2 class="city-name">City</h2>
 
 
-        <div class="content">
-            <img src="images/moonrise.svg">
-            <div>
-                <h1>32'C</h1>
-                <p>Clear</p>
+        <!-- ------Sunrise & Sunset------ -->
+        <div class="row">
+            <div class="sunrise">
+                <img src="images/sunrise.svg">
+                <h2 class="sunrise-time">06.32 AM</h2>
+            </div>
+            <div class="sunset">
+                <img src="images/sunset.svg">
+                <h2 class="sunset-time">06.29 PM</h2>
             </div>
         </div>
+
+        <!-- ------Temp------ -->
+        <div class="temp-row">
+            <img src="images/clear-day.svg">
+                <div>
+                    <h1 class="temp">32°C</h1>
+                    <p class="weather">Clear</p>
+                </div>
+        </div>
+        
+        <!-- ------Humidity & Windspeed------ -->
+        <div class="details">
+            <div class="humidity-col">
+                <img src="images/humidity.svg">
+                <div>
+                    <h2 class="humidity">50%</h2>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="windspeed-col">
+                <img src="images/wind.svg">
+                <div>
+                    <h2 class="windspeed">19 km/h</h2>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </div>
 
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
